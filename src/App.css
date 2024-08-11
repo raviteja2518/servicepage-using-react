@@ -1,0 +1,24 @@
+/* src/App.css */
+
+/* Container for background animation */
+.background-animation {
+    position: absolute; /* Ensure it covers the entire screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Place it behind other content */
+    background: url('./assets/images/rt.mp4') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundAnimation 30s infinite linear;
+  }
+  
+  /* Keyframes for animation (optional) */
+  @keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
